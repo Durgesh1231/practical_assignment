@@ -1,0 +1,106 @@
+Ans 1.
+
+class OverloadDemo {
+    
+    // Method with one int parameter
+    void display(int a) {
+        System.out.println("Argument: " + a);
+    }
+    
+    // Method with two int parameters
+    void display(int a, int b) {
+        System.out.println("Arguments: " + a + " and " + b);
+    }
+    
+    // Method with three int parameters
+    void display(int a, int b, int c) {
+        System.out.println("Arguments: " + a + ", " + b + ", and " + c);
+    }
+    
+    public static void main(String[] args) {
+        OverloadDemo obj = new OverloadDemo();
+        obj.display(10);
+        obj.display(10, 20);
+        obj.display(10, 20, 30);
+    }
+}
+
+
+Ans 2 . 
+
+
+class MyClass {
+    
+    // Method in the class
+    void showMessage() {
+        System.out.println("Hello from MyClass!");
+    }
+    
+    public static void main(String[] args) {
+        // Create an object of MyClass
+        MyClass obj = new MyClass();
+        
+        // Call the method using the object
+        obj.showMessage();
+    }
+}
+
+
+Ans 3.
+
+public class SumArray {
+    
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        int sum = 0;
+        
+        // Calculate the sum of all elements
+        for (int number : numbers) {
+            sum += number;
+        }
+        
+        System.out.println("Sum of all elements: " + sum);
+    }
+}
+
+
+Ans 4 . 
+
+public class FindIndex {
+    
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40, 50};
+        int target = 30;
+        int index = -1;
+        
+        // Find the index of the target element
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] == target) {
+                index = i;
+                break;
+            }
+        }
+        
+        if (index != -1) {
+            System.out.println("Index of " + target + ": " + index);
+        } else {
+            System.out.println(target + " not found in the array.");
+        }
+    }
+}
+
+
+Ans 5.
+
+public class PrintArray {
+    
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        
+        // Print the entire array
+        System.out.println("Array elements:");
+        for (int number : numbers) {
+            System.out.print(number + " ");
+        }
+    }
+}
